@@ -1,0 +1,45 @@
+@import "colors.scss";
+
+nav {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    background-color: $first;
+    z-index: 10;
+
+    // Styles for h1
+    h1 {
+        font-size: 1.8rem;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    // Styles for main element
+    main {
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+
+            li {
+                margin: 0 15px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 1rem;
+                    color: $fourth;
+                    font-weight: 500;
+                    transition: color 0.3s ease;
+
+                    &:hover {
+                        color: $third;
+                    }
+                }
+            }
+        }
+    }
+}
